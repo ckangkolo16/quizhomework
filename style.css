@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: o;
+}
+
+
+#questionsEl{ font-size: larger;
+    font-weight: 900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+
+}
+
+#quiz { text-align: center;
+}
+
+p {
+    text-align: center;
+   
+    
+    color: chocolate;
+}
+
+
+ #container {
+      text-align: center;
+      margin-top: 20px ;
+ }
+
+ .btn { 
+     height: 100px;
+     width: 100px; 
+    background-color: rgb(17, 17, 116); 
+    text-align: center;
+    color: seashell;
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 25px;
+    border: 1px solid; 
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+
+}
+
+.btn:hover {
+    background-color: rgb(35, 35, 158);
+  
+}
+
+
+
+ .choice { background-color: rebeccapurple;
+    color: seashell;
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 16px;
+    border: 1px solid; 
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+ }
+
+.choice:hover {
+    background-color: rgb(152, 77, 228);
+}

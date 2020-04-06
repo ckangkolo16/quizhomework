@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript Quiz</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+  <div id="container">
+        <button id="startBtn" class="btn" >Start Quiz</button>
+      </div>
+  
+
+    <div id="quiz">
+      <div id="questionsEl" class="hide"></div>
+      
+
+      <div id="choicesEl">
+        <button class="choice" id="choice1" onclick="checkAnswer ('choice1')"></button>
+        <div></div>
+        <button class="choice" id="choice2" onclick="checkAnswer ('choice2')"></button>
+        <div></div>
+        <button class="choice" id="choice3" onclick="checkAnswer ('choice3')"></button>
+        <div></div>
+        <button class="choice" id="choice4" onclick="checkAnswer ('choice4')"></button>
+
+        <hr>
+        
+      </div>
+    </div>
+
+
+    <div id="timer"> <p>5:00</p></div>
+    <div id="scoreContainer"></div>
+    <div id="feedback" class="feedback hide"></div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
