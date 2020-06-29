@@ -13,34 +13,46 @@
 
 
   <div id="container">
+    <div class="firstScreen" id="start"  >
         <button id="startBtn" class="btn" >Start Quiz</button>
       </div>
   
 
     <div id="quiz">
-      <div id="questionsEl" class="hide"></div>
+      
+      <div id="questionsEl" class="hide">
+      <h2 id="titleEl"></h2>
+      
+       <div id="choicesEl" class="choices"> 
+         
+      
+      </div>
+
+
+
+      
       
 
-      <div id="choicesEl">
-        <button class="choice" id="choice1" onclick="checkAnswer ('choice1')"></button>
-        <div></div>
-        <button class="choice" id="choice2" onclick="checkAnswer ('choice2')"></button>
-        <div></div>
-        <button class="choice" id="choice3" onclick="checkAnswer ('choice3')"></button>
-        <div></div>
-        <button class="choice" id="choice4" onclick="checkAnswer ('choice4')"></button>
-
-        <hr>
-        
-      </div>
+     
     </div>
 
 
-    <div id="timer"> <p>5:00</p></div>
-    <div id="scoreContainer"></div>
+
+     <div id="scoreContainer" class="hide">
+        <h2>Done!</h2>
+        <p>Your final score is <span id="finalScore"></span>.</p>
+        <p>
+          Enter your initials: <input type="text" id="initials" max="3" />
+          <button id="submitbtn">Submit</button>
+        </p>
+      </div>
+
+
+    <div class="timer">Time: <span id="timer">0</span></div>
+    
     <div id="feedback" class="feedback hide"></div>
 
-
+</div>
 
     <script src="script.js"></script>
 </body>
