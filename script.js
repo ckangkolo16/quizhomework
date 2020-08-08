@@ -212,7 +212,7 @@ function startQuestion() {
 
     options.textContent = i + 1 + ". " + choice;
 
-    options.onclick = checkAnswer();
+    options.onclick = checkAnswer;
 
     choicesEl.appendChild(options);
   });
@@ -226,6 +226,7 @@ function hideshow() {
   this.style.display = "none";
 }
 
+// checking for correct on clicked
 function checkAnswer() {
   if (this.value === questions[runningQuestion].correct) {
     score++;
@@ -262,7 +263,7 @@ function endQuiz() {
   scoreDis.removeAttribute("class");
 
   let finalScore = document.getElementById("finalScore");
-  finalScore.textContent = time;
+  finalScore.textContent = Math.round(100 * (score / questions.length));
 
   questionsEl.setAttribute("class", "hide");
 }
